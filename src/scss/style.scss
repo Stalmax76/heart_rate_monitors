@@ -1,0 +1,32 @@
+@import "fonts";
+body {
+   display: flex;
+   flex-direction: column;
+}
+header {
+   flex: 0 1 100px;
+   background-color: yellow;
+}
+main {
+   flex: 1 1 auto;
+   height: 700px;
+   background: url("@img/20220903_135233.jpg") center 0 no-repeat;
+}
+
+footer {
+   flex: 0 1 auto;
+   background-color: blue;
+}
+
+@media (max-width: 768px) {
+   main {
+      background-color: green;
+   }
+}
+@media (max-width: 768px) {
+   main {
+      h1 {
+         font-size: 48px;
+      }
+   }
+}
